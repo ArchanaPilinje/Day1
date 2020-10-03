@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+ body{
+     background-color:rgba(49, 46, 46, 0.836);
+ }
+
+ h1{
+     text-align: center;
+     text-emphasis:bold;
+     text-decoration: underline indigo;
+     color:#ffa7ff
+ }
+
+ p{
+     text-align: justify;
+     color:#ffa7a7;
+     padding: 2px;
+
+ }
+
+ .content{
+     text-emphasis:bold italic;
+     text-align: center;
+     border-color:purple;
+     border-style:solid;
+     font-family: cursive;
+     padding: 2px;
+     font-size: medium;
+     color:#a7ffa7;
+     border-radius: 10px;
+ }
+
+ a:hover{
+     border:chartreuse solid;
+ }
+
+ a{
+     margin:50px;
+ }
+
+.round{
+    border-radius: 50%;
+   
+}
+
+ol{
+    color:chartreuse;
+    font-style: italic bold;
+}
+
+li:nth-child(odd){
+    background-color: #ff007f;
+}
+
+li:nth-child(even){
+    background-color: #007fff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:hover{
+    color:aqua;
+    background-color: hotpink;
+}
+
+ 
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 >This is the Front End Assignment</h1> 
+    <p>Technical training refers to specific vocational training, meaning the hard skills that employees need to perform their daily job tasks and that managers can clearly measure in terms of proficiency. </p>
+    <p>While the term might make you think of the IT training industry and skills such as computer programming, data analysis and software development, technical training also encompasses the teaching of basic business skills such as sales, business writing, customer service, math and project management. Employees may learn such hard skills through a university degree program, on-the-job training or even experience on the job.</p>
+    <p>Technical training contrasts with soft skills training, which instead focuses on teaching interpersonal skills that can help employees excel regardless of their job role. Soft skills training would include teaching topics such as decision making, problem solving, teamwork, time management and communication skills. Such skills are harder for managers to measure than technical skills, although similar training methods such as formal courses, coaching and experience can help develop soft skills.</p>
+    <p class="content">PLEASE SELECT THE IMAGE TO KNOW MORE ABOUT THE SKILL</p>
+
+    <div style="width: 100%; margin: 0 auto;"> 
+        <a href="https://www.tutorialspoint.com/java/index.htm">
+            <img alt="JAVA" src="java.jpg" class="round" 
+            width="150" height="150">
+   
+        </a>
+        <a href="https://www.learnpython.org/">
+            <img alt="Python" src="python.jpg" class="round"
+            width="150" height="150" >
+   
+        </a>
+        <a href="https://www.javatpoint.com/ruby-tutorial">
+            <img alt="Ruby" src="ruby.jpg" class="round"
+            width="150" height="150" >
+   
+        </a>
+        <a href="https://www.perltutorial.org/">
+            <img alt="Perl Script" src="perl.jpg" class="round" 
+            width="150" height="150" >
+   
+        </a>
+
+
+    </div>
+    <div style="width: 50%; margin: 0 auto;">
+        <ol>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>PERL</li>
+            <li>C++</li>
+            
+        </ol>
+    </div>
+
+    <p class="content">BELOW ARE SOME STATISTICS ABOUT JAVA VERSIONS USED IN 2015 </p>
+    <table>
+        <tr>
+            <th>VERSION</th>
+            <th>DISTRIBUTION PERCENTAGE</th>
+        </tr>
+        <tr>
+            <td>JAVA 6</td>
+            <td>20.84%</td>
+        </tr>
+        <tr>
+            <td>JAVA 7</td>
+            <td>19.79%</td>
+        </tr>
+        <tr>
+            <td>JAVA 8</td>
+            <td>59.37%</td>
+        </tr>
+    </table>
+
+    <p class="content">BELOW IS A  FORM </p>
+    <div class="content">
+    <form action="User Registration" method="post">
+        User ID : <input type = "text" name = "user_id" placeholder="Enter your USER iD" />
+         <br>
+        Password: <input type = "password" name = "password" /><br>
+        Description : <br />
+        <textarea rows = "5" cols = "50" name = "description">
+        </textarea><br/>
+        GENDER: <br/>
+        <input type = "radio" name = "gender" value = "m"> Male
+         <input type = "radio" name = "gender" value = "f"> Female
+         <input type = "radio" name = "gender" value = "o"> Other
+         <br/>
+         Favorite Subjects:<br/>
+         <input type = "checkbox" name = "maths" value = "on"> Maths
+         <input type = "checkbox" name = "physics" value = "on"> Physics
+         <input type = "checkbox" name = "maths" value = "on"> Chemistry
+         <input type = "checkbox" name = "physics" value = "on"> IT
+         <br/>
+         <button type="button" class="btn btn-success">SUBMIT</button
+         
+    </form>
+</div>
+</body>
+</html>
